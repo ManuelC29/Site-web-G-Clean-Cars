@@ -1,6 +1,7 @@
 <template>
   <div class="container" style="padding:28px 0">
-    <h1>Polissage</h1>
+    <h1>Prestation sur Devis</h1>
+    <h2>Polissage</h2>
     <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px">
       <div style="flex:1;min-width:280px">
         <img src="/service-placeholder.jpg" alt="Polissage" style="width:100%;border-radius:8px" />

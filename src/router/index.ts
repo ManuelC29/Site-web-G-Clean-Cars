@@ -21,8 +21,10 @@ const routes = [
   { path: '/boutique', name: 'Boutique', component: Boutique, meta:{title:'Boutique — G Clean Cars', description:'Produits et accessoires.'}},
 ]
 
+
+
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/G-Clean-Cars/'),
   routes
 })
 
