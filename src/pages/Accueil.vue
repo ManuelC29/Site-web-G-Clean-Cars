@@ -196,7 +196,7 @@ section.grid-trio {
   height: auto;
   object-fit: cover;
 }
-.griddy {
+.grid-trio {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;            
@@ -205,7 +205,7 @@ section.grid-trio {
 section.grid-ext {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.5rem;
   width: 100%;
 }
 section.grid .card {
@@ -217,7 +217,6 @@ section.grid-ext .card {
   width: 100%;
   padding: 2rem;
   color: white;
-  box-sizing: border-box;
 }
 /* Grille des 6 images en dessous */
 section.grid-ext .six {
@@ -225,9 +224,10 @@ section.grid-ext .six {
   grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
   grid-template-rows: repeat(2, 1fr);    /* 2 lignes */
   gap: 0.5rem;
-  width: 100%;
-  height: auto; /* la grille s’adapte */
+
 }
+
+
 section.grid-ext .six img {
   width: 100%;
   height: 100%;
