@@ -1,15 +1,7 @@
 <template>
   <div class="container" style="padding:28px 0">
     <h1>Boutique</h1>
-    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px">
-      <div style="flex:1;min-width:280px">
-        <img src="/service-placeholder.jpg" alt="Boutique" style="width:100%;border-radius:8px" />
-      </div>
-      <div style="flex:2;min-width:260px">
-        <p>Produits et accessoires sélectionnés par G Clean Cars.</p>
-        <p>Contenu descriptif optimisé pour le SEO : mots-clés, avantages, détails techniques, témoignages, FAQ.</p>
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -36,3 +28,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+h1 {
+  text-align: center;
+}
+</style>

@@ -91,7 +91,7 @@
         <img src="/images/fauteuil_restaure.webp" alt="">
       </section>
 
-      <section class="griddy"> 
+      <section class="grid-trio"> 
         <div class="quatre">
           <img src="/images/interieur_un.webp" alt="intérieur voiture"/>
           <img src="/images/interieur_deux.webp" alt="intérieur voiture"/>
@@ -171,44 +171,6 @@ line-height: 0;
 }
 
 
-.btn-blue-card {
-  display: inline-block;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  background-color: #0e7d9e;   /* bleu Bootstrap */
-  border: 1px solid #0e7d9e;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.375rem; /* arrondi */
-  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
-}
-
-.btn-blue-card:hover {
-  background-color: #066f8f;
-  border-color: #07799c;
-}
-
-.btn-blue-card:active {
-  background-color: #066f8f;
-  border-color: #07799c;
-}
-
-.btn-blue-card:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.5);
-}
-.btn{
-  justify-items: end;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-}
 
 .trio{
   width: 33%
@@ -217,7 +179,7 @@ line-height: 0;
 .grid {
   height: 50vh;
 }
-section.griddy {
+section.grid-trio {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 colonnes : gauche images, droite texte */
   gap: 2rem;
@@ -240,14 +202,17 @@ section.griddy {
   align-items: center;            
 }
 
-/* SECTION EXTÉRIEUR */
 section.grid-ext {
   display: flex;
-  flex-direction: column; /* Article au-dessus, images en dessous */
+  flex-direction: column;
   gap: 2rem;
   width: 100%;
 }
-/* Article en haut sur toute la largeur */
+section.grid .card {
+  display: flex;
+  flex-direction: column;
+    justify-content: space-between;
+}
 section.grid-ext .card {
   width: 100%;
   padding: 2rem;
