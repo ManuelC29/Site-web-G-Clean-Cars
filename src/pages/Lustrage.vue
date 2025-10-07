@@ -1,24 +1,34 @@
 <template>
   <div class="container" style="padding:28px 0">
-    <h1>Lustrage</h1>
-    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px">
-      <div style="flex:1;min-width:280px">
-        <img src="/service-placeholder.jpg" alt="Lustrage" style="width:100%;border-radius:8px" />
-      </div>
-      <div style="flex:2;min-width:260px">
-        <p>Lustrage pour une brillance parfaite — G Clean Cars</p>
-        <p>Contenu descriptif optimisé pour le SEO : mots-clés, avantages, détails techniques, témoignages, FAQ.</p>
-      </div>
-    </div>
+    <span class="titre red souligne">Prestation sur Devis</span>
+    <h1 class="titre">Lustrage</h1>
   </div>
+  <section class="grid-trois">
+    <img src="/images/lustrage_un.webp" alt="Polissage voiture"/>
+    <img src="/images/lustrage_deux.webp" alt="Polissage voiture"/>
+          <article class="card-black">
+        <div class="text">
+          <span>La première étape consiste à réaliser un detailing extérieur approfondi, afin de débarrasser la carrosserie de toutes les impuretés susceptibles d’endommager la peinture pendant le polissage.</span>
+        </div>
+      </article>
+      
+  </section>
+
+  <blockquote class="blocknote-black">
+    <span>Le polissage est bien plus qu’un simple embellissement. Il s’agit d’une intervention essentielle pour entretenir et prolonger la durée de vie de la peinture de votre véhicule, tout en lui redonnant un aspect neuf, brillant et soigné.</span>
+    <br>
+  </blockquote>
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import useSeoMeta from '@/seo/useSeoMeta'
+import Footer from '@/components/Footer.vue'
 
 export default defineComponent({
   name:'Lustrage — G Clean Cars',
+  components: {Footer},
   setup(){
     useSeoMeta({
       title: 'Lustrage — G Clean Cars',
@@ -32,7 +42,16 @@ export default defineComponent({
         "description":"Lustrage pour une brillance parfaite — G Clean Cars"
       }
     })
-    return {}
+    return {Footer}
   }
 })
 </script>
+
+<style scoped>
+.text{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 30px;
+}
+</style>

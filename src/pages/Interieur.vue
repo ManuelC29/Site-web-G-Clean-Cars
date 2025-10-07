@@ -1,16 +1,21 @@
 <template>
   <div class="container" style="padding:28px 0">
-    <h1>Intérieur</h1>
+    <span class="titre red souligne">Prestation sur Devis</span>
+    <h1 class="titre">Nettoyage Intérieur</h1>
 
   </div>
+
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import useSeoMeta from '@/seo/useSeoMeta'
+import Footer from '@/components/Footer.vue'
 
 export default defineComponent({
   name:'Intérieur — G Clean Cars',
+  components: {Footer},
   setup(){
     useSeoMeta({
       title: 'Intérieur — G Clean Cars',
@@ -24,7 +29,7 @@ export default defineComponent({
         "description":"Nettoyage et rénovation intérieure : tissus, cuirs et plastiques."
       }
     })
-    return {}
+    return {Footer}
   }
 })
 </script>

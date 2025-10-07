@@ -10,7 +10,8 @@
 
     <div class="container">
 
-      <section class="grid">
+      <section class="grid-deux">
+        <img src="/images/polissage.webp" alt="Polissage voiture"/>
         <article class="card">
           <div class="text">
             <h3>Polissage</h3>
@@ -21,10 +22,10 @@
             <RouterLink to="/contact" class="btn-blue-card">Contact</RouterLink>
           </div>
         </article>
-        <img src="/images/polissage.webp" alt="Polissage voiture"/>
+        
       </section>
       
-      <section class="grid">
+      <section class="grid-trois">
         <article class="card">
           <div class="text">
             <h3>Lustrage</h3>
@@ -48,7 +49,7 @@
         </article>
       </section>
 
-      <section class="grid">
+      <section class="grid-deux">
         <img src="/images/cire_moto.webp" alt=""></img>
         <article class="card">
           <div class="text">
@@ -62,9 +63,9 @@
         </article>
       </section>
 
-      <section class="grid">
-        <img class="trio" src="/images/renovation_optique_avant.webp" alt=""></img>
-        <img class="trio" src="/images/renovation_optique_apres.webp" alt=""></img>
+      <section class="grid-trois">
+        <img class="trio" src="/images/renovation_optique_avant.webp" alt="renovation optique avant"></img>
+        <img class="trio" src="/images/renovation_optique_apres.webp" alt="renovation optique arrière"></img>
         <article class="card">
           <div class="text">
             <h3>Rénovation d'optique de phare</h3>
@@ -77,7 +78,7 @@
         </article>
       </section>
 
-      <section class="grid"> 
+      <section class="grid-trois"> 
         <article class="card">
           <div class="text">
             <h3>Traitement des cuirs</h3>
@@ -87,8 +88,8 @@
             <RouterLink to="/contact" class="btn-blue-card">Contact</RouterLink>
           </div>
         </article>
-        <img class="trio" src="/images/fauteuil_abime.webp" alt="">
-        <img src="/images/fauteuil_restaure.webp" alt="">
+        <img class="trio" src="/images/fauteuil_abime.webp" alt="fauteuil abimé"></img>
+        <img src="/images/fauteuil_restaure.webp" alt="fauteuil restauré"></img>
       </section>
 
       <section class="grid-trio"> 
@@ -110,7 +111,7 @@
         </article>
       </section>
 
-      <section class="grid-ext"> 
+      <section class="grid-deux-ligne"> 
         <article class="card">
           <div class="text">
             <h3>Nettoyage Extérieur</h3>
@@ -131,10 +132,13 @@
         </div>
       </section>
     </div>
-    
   </section>
-   
+  <section>
+    <Footer />
+  </section>
+
 </template>
+
 
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -167,32 +171,20 @@ line-height: 0;
 }
 
 .titre img{
-  width: 85% !important;
+  width: 95% !important;
 }
 
-
-
-.trio{
-  width: 33%
-}
-
-.grid {
-  height: 50vh;
-}
-section.grid-trio {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 colonnes : gauche images, droite texte */
-  gap: 2rem;
-  align-items: center;
-  padding: 2rem;
-}
 .quatre {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;            
+  grid-gap: 20px;
   flex-wrap: wrap;
 }
 
 .quatre img {
-  width: 50%;   /* 2 images par ligne */
+  width: 100%;   /* 2 images par ligne */
   height: auto;
   object-fit: cover;
 }
@@ -200,40 +192,12 @@ section.grid-trio {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;            
-}
-
-section.grid-ext {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 100%;
-}
-section.grid .card {
-  display: flex;
-  flex-direction: column;
-    justify-content: space-between;
-}
-section.grid-ext .card {
-  width: 100%;
-  padding: 2rem;
-  color: white;
-}
-/* Grille des 6 images en dessous */
-section.grid-ext .six {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-  grid-template-rows: repeat(2, 1fr);    /* 2 lignes */
-  gap: 0.5rem;
+  grid-gap: 20px;
+  padding: 20px;
 
 }
 
 
-section.grid-ext .six img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* couvre bien chaque case */
-  border-radius: 6px;
-}
 h3, p{
   color:black
 }

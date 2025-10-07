@@ -10,6 +10,8 @@
         <h5>06 98 45 92 82</h5>
       </div>
       <div>
+        <svg width="20" height="20" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5Z"/></svg>
+
         <h5>Adresse postale</h5>
         <h5>G Clean Cars</h5>
         <h5>Kernevez Vihan</h5>

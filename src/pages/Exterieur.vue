@@ -1,24 +1,31 @@
 <template>
   <div class="container" style="padding:28px 0">
-    <h1>Extérieur</h1>
-    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px">
-      <div style="flex:1;min-width:280px">
-        <img src="/service-placeholder.jpg" alt="Extérieur" style="width:100%;border-radius:8px" />
-      </div>
-      <div style="flex:2;min-width:260px">
-        <p>Services extérieurs : lavage, dégraissage, rénovation.</p>
-        <p>Contenu descriptif optimisé pour le SEO : mots-clés, avantages, détails techniques, témoignages, FAQ.</p>
-      </div>
-    </div>
+    <span class="titre red souligne">Prestation sur Devis</span>
+    <h1 class="titre">Nettoyage Extérieur</h1>
+    <img src="/images/ext_un.webp" alt="Nettoyage extérieur voiture"/>
   </div>
+
+  <section class="grid-deux-ligne">
+    <img src="/images/ext_un.webp" alt="Nettoyage extérieur voiture"/>
+    <img src="/images/ext_un.webp" alt="Nettoyage extérieur voiture"/>
+    <article class="card-black">
+      <div class="text">
+        <span>Le lavage extérieur professionnel inclut un dégraissage minutieux de la carrosserie, des jantes et des pneus, suivi d’un séchage soigneux pour éviter les traces d’eau.</span>
+      </div>
+    </article>
+  </section>
+
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import useSeoMeta from '@/seo/useSeoMeta'
+import Footer from '@/components/Footer.vue'
 
 export default defineComponent({
   name:'Extérieur — G Clean Cars',
+  components: {Footer},
   setup(){
     useSeoMeta({
       title: 'Extérieur — G Clean Cars',
@@ -32,7 +39,14 @@ export default defineComponent({
         "description":"Services extérieurs : lavage, dégraissage, rénovation."
       }
     })
-    return {}
+    return {Footer}
   }
 })
 </script>
+
+<style scoped>
+img{
+  width: 60%;
+  margin-top: 20px;
+}
+</style>

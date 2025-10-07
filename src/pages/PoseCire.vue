@@ -1,24 +1,28 @@
 <template>
   <div class="container" style="padding:28px 0">
-    <h1>Pose Cire</h1>
-    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:18px">
-      <div style="flex:1;min-width:280px">
-        <img src="/service-placeholder.jpg" alt="Pose Cire" style="width:100%;border-radius:8px" />
-      </div>
-      <div style="flex:2;min-width:260px">
-        <p>Application de cire professionnelle pour protéger la peinture.</p>
-        <p>Contenu descriptif optimisé pour le SEO : mots-clés, avantages, détails techniques, témoignages, FAQ.</p>
-      </div>
-    </div>
+    <span class="titre red souligne">Prestation sur Devis</span>
+    <h1 class="titre">Pose Cire</h1>
+    <blockquote class="blocknote-black">
+      <span style="font-style: italic;">Cire de protection</span>
+      <br>
+    </blockquote>
+    <blockquote class="blocknote-black">
+      <span>Idéale pour un effet brillant immédiat et un effet déperlant, la cire est une solution économique qui offre une belle profondeur à la peinture tout en facilitant l’entretien régulier.</span>
+      <br>
+    </blockquote>
+    <img src="/images/pose_cire.webp" alt="Pose de cire"/>
   </div>
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import useSeoMeta from '@/seo/useSeoMeta'
+import Footer from '@/components/Footer.vue'
 
 export default defineComponent({
   name:'Pose Cire — G Clean Cars',
+  components: {Footer},
   setup(){
     useSeoMeta({
       title: 'Pose Cire — G Clean Cars',
@@ -32,7 +36,14 @@ export default defineComponent({
         "description":"Application de cire professionnelle pour protéger la peinture."
       }
     })
-    return {}
+    return {Footer}
   }
 })
 </script>
+
+<style scoped>
+img{
+  width: 60%;
+  margin-top: 20px;
+}
+</style>

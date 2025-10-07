@@ -34,26 +34,83 @@ body{
 .nav-toggle{background:transparent;border:2px solid #111;border-radius:8px;padding:8px}
 .hero{min-height:420px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:40px 16px;background:#000}
 .hero h1{font-size:56px;line-height:1.05;margin:0 0 8px}
-.grid, grid-trio{
-    display: flex;
-    grid-template-columns:repeat(auto-fit,minmax(800px,1fr));
-    gap:24px;
-    padding:32px 16px;
-    background:#111;
-    color:#111
+
+img{
+  border-radius: 12px;
 }
+
+.grid-deux{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 20px;
+  height: auto;
+  align-items: center;   
+}
+.grid-trois{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  padding: 20px;
+  height: auto;
+  text-align: center;
+}
+.grid-six{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  height: auto;
+}
+.grid-deux-ligne{
+  display: grid;
+  grid-template-rows: 0,5fr 6fr;
+  grid-row-gap: 20px;
+  padding: 20px;
+
+}
+.six{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+
+}
+.six img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.grid-trois img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-deux img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.card{
+  background:var(--card);
+  display: inline-block;
+  padding:20px;
+  border-radius:12px;
+  color:#111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+
+
+
 .grid img{
     width: 100%;
     object-fit: cover;
 }
-.card{
-    background:var(--card);
-    display: inline-block;
-    padding:20px;
-    border-radius:12px;
-    color:#111;
 
-}
+
 .section img{
     width: 50%;
     border-radius: 12px;
@@ -67,16 +124,7 @@ body{
     margin:0
 }
 .menu-list li{padding:14px 8px;border-bottom:1px solid #cabbbb}
-.footer{
-    padding:24px;
-    background:#0b0b0b;
-    color:#999;
-    text-align:center;
-    bottom:0;
-    left: 0;
-    right: 0;
-    position: absolute;
-}
+
 a{color:inherit;text-decoration:none}
 button{cursor:pointer}
 
@@ -179,8 +227,67 @@ h1{
   margin-top: 10px;
 }
 
-@media (max-width:600px){.hero h1{
-  font-size:26px
+.souligne{
+  text-decoration: underline;
+  font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 84px;
 }
+.red {
+  padding: 5px 16px;
+  background-color: rgb(90, 7, 7);
+  color: #fff;
+  margin: 0 auto;
+}
+.titre{
+  font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 56px;
+}
+.container {
+  text-align: center;
+}
+
+.souligne {
+  text-decoration: underline;
+  font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 84px;
+}
+.red {
+  padding: 5px 16px;
+  background-color: red;
+  color: #fff;
+  margin: 0 auto;
+}
+.titre {
+  padding-bottom: 10px;
+  font-family: "Montserrat", "Odoo Unicode Support Noto", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 56px;
+}
+
+
+.blocknote-black{
+  padding: 20px 40px 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-left:7px solid #ffffff ;
+  text-align: left;
+}
+.blocknote-black span{
+  font-family: "Open Sans", "Odoo Unicode Support Noto", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+}
+
+@media (max-width:600px){
+  .hero h1{
+    font-size:26px
+  }
 
 }
