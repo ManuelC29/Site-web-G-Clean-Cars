@@ -1,4 +1,5 @@
 <template>
+<div class="container"></div>
   <section>
     <div class="hero">
       <h1>Offrez une seconde jeunesse à votre véhicule</h1>
@@ -132,9 +133,8 @@
       </section>
     </div>
   </section>
-  <section>
     <Footer />
-  </section>
+
 
 </template>
 

@@ -1,4 +1,5 @@
-:root{--bg:#000;--accent:#0d7490;--muted:#666;--card:#f3f3f3;--container:1100px}
+:root{
+  --bg:#000;--accent:#0d7490;--muted:#666;--card:#f3f3f3;--container:1100px}
 *{
   box-sizing:border-box;
   

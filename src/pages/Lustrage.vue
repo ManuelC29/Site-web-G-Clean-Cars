@@ -1,5 +1,5 @@
 <template>
-  <div class="container" style="padding:28px 0">
+  <div class="container">
     <span class="titre red souligne">Prestation sur Devis</span>
     <h1 class="titre">Lustrage</h1>
   </div>
