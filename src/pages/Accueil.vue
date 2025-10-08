@@ -22,7 +22,6 @@
             <RouterLink to="/contact" class="btn-blue-card">Contact</RouterLink>
           </div>
         </article>
-        
       </section>
       
       <section class="grid-trois">
@@ -37,7 +36,7 @@
           </div>
         </article>
         <img src="/images/lustrage.webp" alt="Lustrage voiture"/>
-                <article class="card">
+        <article class="card">
           <div class="text">
             <h3>Traitement Céramique</h3>
             <p>Le traitement céramique sur carrosserie est une protection durable appliquée sur la peinture du véhicule pour la rendre plus résistante aux agressions extérieures, tout en renforçant sa brillance et facilitant son entretien.</p>

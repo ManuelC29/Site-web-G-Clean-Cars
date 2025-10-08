@@ -98,8 +98,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
-
 blockquote{
   padding: 20px 40px 20px;
   background-color: #0e7d9e;
@@ -120,7 +118,6 @@ blockquote{
   font-size: 38px;
   font-style: italic;
 }
-
 blockquote span{
   font-family: "Open Sans", "Odoo Unicode Support Noto", sans-serif;
   font-size: 22px;
@@ -130,13 +127,11 @@ blockquote span{
   padding: 40px;
   background-color: #0e7d9e;
 }
-
 .section-blocknote-black{
   padding: 40px;
   background-color: #000;
 
 }
-
 .card-black{
   color: #fff;
   padding: 20px;
@@ -144,7 +139,4 @@ blockquote span{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-
-
-
 </style>

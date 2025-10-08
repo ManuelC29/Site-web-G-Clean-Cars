@@ -1,9 +1,10 @@
 <template>
-<h1>Contact</h1>
-
     <div class="container">
+      <h1>À propos</h1>
+      <section class="grid-2-3">
+
+      </section>
       <div>
-        <h5>Pour s'informer ou contacter : </h5>
         <h5><FontAwesomeIcon :icon="faSquareFacebook" /> G Clean Cars</h5>
         <h5><FontAwesomeIcon :icon="faInstagram" /> g_clean_cars</h5>
         <h5><FontAwesomeIcon :icon="faEnvelope" /> gcleancarshotmail.com</h5>
@@ -18,7 +19,7 @@
         <h5>29510 LANGOLEN</h5>
       </div>
     </div>
-
+    <Footer />
 </template>
 
 <script lang="ts">
@@ -27,9 +28,11 @@ import useSeoMeta from '@/seo/useSeoMeta'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faSquareFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import Footer from '@/components/Footer.vue'
 
 export default defineComponent({
   name:'Contact',
+  components:{ FontAwesomeIcon, Footer },
   setup(){
     useSeoMeta({
       title:'Contact — G Clean Cars',
@@ -44,7 +47,7 @@ export default defineComponent({
     })
     const form = reactive({ name:'', email:'', message:'' })
 
-    return { form, faSquareFacebook, faInstagram, faEnvelope, faLocationDot}
+    return { form, faSquareFacebook, faInstagram, faEnvelope, faLocationDot, Footer }
   }
 })
 </script>
@@ -54,7 +57,8 @@ h1{
   text-align: center;
   margin-top: 20px;
 }
-body{
+.container{
   background-color: white;
+  color: black;
 }
 </style>
