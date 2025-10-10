@@ -92,7 +92,7 @@
         <img src="/images/fauteuil_restaure.webp" alt="fauteuil restauré"></img>
       </section>
 
-      <section class="grid-trio"> 
+      <section class="grid-quatre"> 
         <div class="quatre">
           <img src="/images/interieur_un.webp" alt="intérieur voiture"/>
           <img src="/images/interieur_deux.webp" alt="intérieur voiture"/>
@@ -187,9 +187,9 @@ line-height: 0;
   height: auto;
   object-fit: cover;
 }
-.grid-trio {
+.grid-quatre {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   align-items: center;            
   grid-gap: 20px;
   padding: 20px;
@@ -199,6 +199,11 @@ line-height: 0;
 
 h3, p{
   color:black
+}
+
+.grid-deux{
+  align-items: stretch;
+
 }
 
 </style>

@@ -6,15 +6,15 @@
       <nav>
         <ul class="menu-list">
           <li></li>
-          <li @click="openMenu=false"><RouterLink to="/">Accueil</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/polissage">Polissage</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/lustrage">Lustrage</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/traitement-ceramique">Traitement Céramique</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/pose-cire">Pose Cire</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/exterieur">Extérieur</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/interieur">Intérieur</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/contact">Contact</RouterLink></li>
-          <li @click="openMenu=false"><RouterLink to="/boutique">Boutique</RouterLink></li>
+          <RouterLink to="/"><li @click="openMenu=false">Accueil</li></RouterLink>
+          <RouterLink to="/polissage"><li @click="openMenu=false">Polissage</li></RouterLink>
+          <RouterLink to="/lustrage"><li @click="openMenu=false">Lustrage</li></RouterLink>
+          <RouterLink to="/traitement-ceramique"><li @click="openMenu=false">Traitement Céramique</li></RouterLink>
+          <RouterLink to="/pose-cire"><li @click="openMenu=false">Pose Cire</li></RouterLink>
+          <RouterLink to="/exterieur"><li @click="openMenu=false">Extérieur</li></RouterLink>
+          <RouterLink to="/interieur"><li @click="openMenu=false">Intérieur</li></RouterLink>
+          <RouterLink to="/contact"><li @click="openMenu=false">Contact</li></RouterLink>
+          <RouterLink to="/boutique"><li @click="openMenu=false">Boutique</li></RouterLink>
         </ul>
       </nav>
       <div style="position:absolute;bottom:20px;left:18px;font-size:14px;color:#444">
@@ -82,5 +82,9 @@ export default defineComponent({
 }
 .coordonnee:hover{
   color: rgb(1, 108, 170);
+}
+
+li:hover{
+  background: rgb(226, 228, 230);
 }
 </style>

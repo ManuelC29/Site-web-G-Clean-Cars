@@ -22,4 +22,8 @@ export default defineComponent({ name: 'Header' })
 .title-right{
   text-align:right;
 }
+.header{
+
+  box-shadow: 0 2px 4px 5px rgba(0,0,0,.1);
+}
 </style>

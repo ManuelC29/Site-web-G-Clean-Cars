@@ -130,7 +130,8 @@ img{
     padding:0;
     margin:0
 }
-.menu-list li{padding:14px 8px;border-bottom:1px solid #cabbbb}
+.menu-list li{
+  padding:16px 8px;border-bottom:1px solid #cabbbb}
 
 a{color:inherit;text-decoration:none}
 button{cursor:pointer}
@@ -254,6 +255,7 @@ h1{
 }
 .container {
   text-align: center;
+  padding: 20px;
 }
 
 .souligne {
@@ -290,13 +292,30 @@ h1{
   font-size: 28px;
   font-style: italic;
 }
+.grid-quatre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;            
+  grid-gap: 20px;
+  padding: 20px;
+
+}
 
 
 
+@media (max-width:800px){
 
-@media (max-width:600px){
-  .hero h1{
-    font-size:26px
-  }
+.grid-deux{
+  grid-template-columns: 1fr;
+}
+.grid-trois{
+  grid-template-columns: 1fr;
+}
+.grid-quatre{
+  grid-template-columns: 1fr;
+}
+.grid-quatre{
+  grid-template-columns: 1fr;
+}
 
 }

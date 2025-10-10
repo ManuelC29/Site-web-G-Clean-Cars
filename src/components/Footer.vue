@@ -73,7 +73,7 @@ export default defineComponent({
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
+
   text-align: left;
 }
 h2{
@@ -102,7 +102,7 @@ h3{
   justify-content: flex-end;
 }
 .footer{
-    box-shadow: 0 4px 6px 5px #f5f2f2;
+  box-shadow: 0 4px 6px 5px #f5f2f2;
   background-color: #021014;
   padding: 5px 0;
   margin-top: 40px;
