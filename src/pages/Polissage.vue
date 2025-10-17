@@ -124,9 +124,12 @@ blockquote span{
   font-style: italic;
 }
 .section-blocknote{
+  margin-left: 0;
+  margin-right: 0;
   padding: 40px;
   background-color: #0e7d9e;
 }
+
 .section-blocknote-black{
   padding: 40px;
   background-color: #000;

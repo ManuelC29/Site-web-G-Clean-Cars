@@ -11,7 +11,6 @@
           <span>La première étape consiste à réaliser un detailing extérieur approfondi, afin de débarrasser la carrosserie de toutes les impuretés susceptibles d’endommager la peinture pendant le polissage.</span>
         </div>
       </article>
-      
   </section>
 
   <blockquote class="blocknote-black">
@@ -54,4 +53,5 @@ export default defineComponent({
   height: 100%;
   font-size: 30px;
 }
+
 </style>

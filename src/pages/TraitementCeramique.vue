@@ -2,13 +2,13 @@
   <div class="container" style="padding:28px 0">
     <span class="titre red souligne">Prestation sur Devis</span>
     <h1 class="titre">Traitement Céramique</h1>
-
-    <blockquote class="blocknote-black">
-      <span>Représentant la solution de protection la plus durable, le traitement céramique forme une barrière résistante contre les UV, produits chimiques et micro-rayures, tout en offrant une brillance profonde et intense.</span>
-      <br>
-    </blockquote>
-
-    <img src="/images/traitement_ceramique.webp" alt="Traitement céramique voiture"/>
+    <section>
+        <blockquote class="blocknote-black">
+          <span>Représentant la solution de protection la plus durable, le traitement céramique forme une barrière résistante contre les UV, produits chimiques et micro-rayures, tout en offrant une brillance profonde et intense.</span>
+          <br>
+        </blockquote>
+      <img src="/images/traitement_ceramique.webp" alt="Traitement céramique voiture"/>
+    </section>
   </div>
   
   <Footer />

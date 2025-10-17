@@ -2,15 +2,19 @@
   <div class="container" style="padding:28px 0">
     <span class="titre red souligne">Prestation sur Devis</span>
     <h1 class="titre">Pose Cire</h1>
-    <blockquote class="blocknote-black">
-      <span style="font-style: italic;">Cire de protection</span>
-      <br>
-    </blockquote>
-    <blockquote class="blocknote-black">
-      <span>Idéale pour un effet brillant immédiat et un effet déperlant, la cire est une solution économique qui offre une belle profondeur à la peinture tout en facilitant l’entretien régulier.</span>
-      <br>
-    </blockquote>
-    <img src="/images/pose_cire.webp" alt="Pose de cire"/>
+
+    <section>
+      <blockquote class="blocknote-black">
+        <span style="font-style: italic;">Cire de protection</span>
+        <br>
+      </blockquote>
+      <blockquote class="blocknote-black">
+        <span>Idéale pour un effet brillant immédiat et un effet déperlant, la cire est une solution économique qui offre une belle profondeur à la peinture tout en facilitant l’entretien régulier.</span>
+        <br>
+      </blockquote>
+      <img src="/images/pose_cire.webp" alt="Pose de cire"/>
+    </section>
+
   </div>
   <Footer />
 </template>

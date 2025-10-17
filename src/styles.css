@@ -301,6 +301,10 @@ h1{
 
 }
 
+section{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 
 @media (max-width:800px){
@@ -312,10 +316,7 @@ h1{
   grid-template-columns: 1fr;
 }
 .grid-quatre{
-  grid-template-columns: 1fr;
-}
-.grid-quatre{
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr !important;
 }
 
 }
